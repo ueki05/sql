@@ -70,3 +70,28 @@ OR drink_name = 'Kiss on the Lips';
 SELECT color, ice
 FROM drink_info
 WHERE cost >= 3.8;
+
+# 2つのSELECT文の不要な部分を削り、ORANGESを追加して1つのSELECT文にする
+SELECT drink_name
+FROM easy_drinks
+WHERE main = 'apple juice'
+OR main = 'orange juice';
+
+# NULL検索のためのIS NULLの使用
+SELECT drink_name
+FROM drink_info
+WHERE calories IS NULL;
+
+# 1つのキーワードで時間を節約：LIKE
+SELECT *
+FROM my_contacts
+WHERE location LIKE 'カリフォルニア州%';
+
+# LIKEとワイルドカード
+SELECT first_name
+FROM my_contacts
+WHERE first_name LIKE '%im'; # あらゆる長さの道の文字列
+
+SELECT first_name
+FROM my_contacts
+WHERE first_name LIKE '_im'; # 未知のちょうど1文字
