@@ -95,3 +95,71 @@ WHERE first_name LIKE '%im'; # あらゆる長さの道の文字列
 SELECT first_name
 FROM my_contacts
 WHERE first_name LIKE '_im'; # 未知のちょうど1文字
+
+# BETWEENキーワード
+SELECT drink_name
+FROM drink_info
+WHERE calories BETWEEN 30 AND 60;
+
+SELECT drink_name
+FROM drink_info
+WHERE calories < 30 OR calories > 60;
+
+SELECT drink_name
+FROM drink_info
+WHERE drink_name BETWEEN 'G' AND 'O';
+
+# BETWEENで動かないパターン
+SELECT drink_name
+FROM drink_info
+WHERE calories BETWEEN 60 AND 30; # Empty set (0.00 sec)
+
+# WHERE IN
+SELECT date_name
+FROM black_book
+WHERE rating IN ('斬新', '驚くべき', '楽しい', 'かなりいい');
+
+SELECT date_name
+FROM black_book
+WHERE rating NOT IN ('斬新', '驚くべき', '楽しい', 'かなりいい');
+
+# NOT
+SELECT drink_name
+FROM drink_info
+WHERE NOT carbs BETWEEN 3 AND 5;
+
+SELECT date_name
+FROM black_book
+WHERE NOT date_name LIKE 'ア%'
+AND NOT date_name LIKE 'イ%';
+
+# エクササイズ
+# テキストのWEHRE句をできるだけ簡単に書き換える
+SELECT drink_name
+FROM easy_drinks
+WHERE amount1 >= 1.50;
+
+SELECT drink_name
+FROM drink_info
+WHERE ice = 'N';
+
+SELECT drink_name
+FROM drink_info
+WHERE calories >= 20;
+
+SELECT drink_name
+FROM easy_drinks
+WHERE main IN ('cherry juice', 'tonic water');
+
+SELECT drink_name
+FROM drink_info
+WHERE calories > 0;
+
+SELECT drink_name
+FROM drink_info
+WHERE carbs < 3
+OR carbs > 5;
+
+SELECT date_name
+FROM black_book
+WHERE date_name NOT BETWEEN 'ア' AND 'イ';
