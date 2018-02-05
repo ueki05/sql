@@ -1,51 +1,47 @@
-# メモ
-今日の内容は、テキストについているsql文がmysqlにインポートできなかったため、tableの作成ができず、sqlの動作確認ができていないため、タイポ等のミスがあるかも。
-tableが生成できたらまた確認する。
-
 # 道化師の追跡
 INSERT INTO clown_info
 VALUES
 (
-  'ジッポ',
-  'ミルストーンモール',
-  '女性、オレンジ色のスーツ、バギーパンツ',
-  'ダンス、歌'
+  'Zippo',
+  'Millstone Mall',
+  'F, orange suit, baggy pants',
+  'dancing, singing'
 );
 
 INSERT INTO clown_info
 VALUES
 (
-  'スナッグルズ',
-  'ディクソンパーク',
-  '女性、黄色いシャツ、青いバギーパンツ',
-  'ホルン、傘'
+  'Snuggles',
+  'Dickson Park',
+  'F, yellow shirt, baggy red pants',
+  'horn, umbrella'
 );
 
 INSERT INTO clown_info
 VALUES
 (
-  'ボンゾ',
-  'ボールマート',
-  '男性、女性、水玉模様のドレス',
-  '歌、ダンス'
+  'Bonzo',
+  'Ball-Mart',
+  'M, in drag, polka dotted dress',
+  'singing, dancing'
 );
 
 INSERT INTO clown_info
 VALUES
 (
-  'スニッフルズ',
-  'トレイシーズ',
-  '男性、緑と紫のスーツ、先の尖った鼻',
-  '小さな車に乗り込む'
+  'Sniffles',
+  'Tracy\'s',
+  'M, green and purple suit, pointy nose',
+  'riding a small car'
 );
 
 INSERT INTO clown_info
 VALUES
 (
-  'ミスター・ホボ',
-  'ディクソンパーク',
-  '男性、葉巻、黒髪、小さな帽子',
-  'バイオリン'
+  'Mr. Hobo',
+  'Dickson Park',
+  'M, cigar, black hair, tiny hat',
+  'violin'
 );
 
 # メモ
