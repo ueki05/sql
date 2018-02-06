@@ -49,3 +49,7 @@ VALUES
 最後のレコード＝最新だという確証はない。
 行がテーブルに格納される際に、その順序を変えてしまうような内部的な要素が、データベースには多数ある。
 使用しているRDBMSの種類や、列に対するインデックスも、その要素の1つ。
+
+# DELETE文
+DELETE FROM clown_info
+WHERE activities = 'dancing';
