@@ -53,3 +53,40 @@ VALUES
 # DELETE文
 DELETE FROM clown_info
 WHERE activities = 'dancing';
+
+# INSERT文とDELETE文を使ってdrink_infoテーブルを要求されたとおりに変更する
+## Kiss on the Lipsのカロリーを170に変更する
+INSERT INTO drink_info
+VALUES
+(
+  'Kiss on the Lips',
+  5.50,
+  42.50,
+  'purple',
+  'Y',
+  170
+);
+
+DELETE FROM drink_info
+WHERE drink_name = 'Kiss on the Lips';
+
+## 「yellow」という値を「gold」に変更
+INSERT INTO drink_info
+VALUES ('Blackthorn', 3.00, 8.40, 'gold', 'Y', 33), ('Greyhound', 4.00, 14.00, 'gold', 'Y', 50);
+
+DELETE FROM drink_info
+WHERE color = 'yellow';
+
+## 価格が2.50ドルであるすべてのドリンクを3.50ドルにし、さらにこれまで価格が3.50ドルだったすべてのドリンクを4.50ドルにする
+INSERT INTO drink_info
+VALUES ('Oh My Gosh', 4.50, 8.60, 'orange', 'Y', 35);
+
+DELETE FROM drink_info
+WHERE cost = 3.50;
+
+INSERT INTO drink_info
+VALUES ('Blue Moon', 3.50, 3.20, 'blue', 'Y', 12), ('Lime Fizz', 3.50, 5.40, 'green', 'Y', 24);
+
+DELETE FROM drink_info
+WHERE cost = 2.50 ;
+
