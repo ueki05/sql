@@ -90,3 +90,9 @@ VALUES ('Blue Moon', 3.50, 3.20, 'blue', 'Y', 12), ('Lime Fizz', 3.50, 5.40, 'gr
 DELETE FROM drink_info
 WHERE cost = 2.50 ;
 
+# 他のレコードに影響を与えずに、Mr. Hoboの余分なレコードを整理する
+DELETE FROM clown_info
+WHERE name = 'Mr.Hobo'
+AND last_seen <> 'Tracy\'s';
+
+DELETE FROM clown_info WHERE name = 'Mr. Hobo' AND last_seen <> 'Tracy\'s';
