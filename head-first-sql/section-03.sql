@@ -96,3 +96,14 @@ WHERE name = 'Mr.Hobo'
 AND last_seen <> 'Tracy\'s';
 
 DELETE FROM clown_info WHERE name = 'Mr. Hobo' AND last_seen <> 'Tracy\'s';
+
+# UPDATE文を使ったデータの変更
+UPDATE doughnut_ratings
+SET type = 'glazed'
+WHERE type = 'plain glazed';
+
+# UPDATE文は新しいINSERT文/DELETE文
+UPDATE clown_info
+SET last_seen = 'Dickson Park'
+WHERE name = 'Mr. Hobo'
+AND last_seen = 'Tracy\'s';
