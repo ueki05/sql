@@ -107,3 +107,24 @@ UPDATE clown_info
 SET last_seen = 'Dickson Park'
 WHERE name = 'Mr. Hobo'
 AND last_seen = 'Tracy\'s';
+
+# 道化師の動作の更新
+UPDATE clown_info
+SET activities = 'singing'
+WHERE name = 'Zippo';
+
+UPDATE clown_info
+SET appearance = 'F, yellow shirt, baggy bule pants'
+WHERE name = 'Snuggles';
+
+UPDATE clown_info
+SET last_seen = 'Ball-Mart'
+WHERE name = 'Bonzo';
+
+UPDATE clown_info
+SET activities = 'riding a small car'
+WHERE name = 'Sniffles';
+
+UPDATE clown_info
+SET last_seen = 'Dickson Park'
+WHERE name = 'Mr. Hobo';
