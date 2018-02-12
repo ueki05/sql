@@ -128,3 +128,10 @@ WHERE name = 'Sniffles';
 UPDATE clown_info
 SET last_seen = 'Dickson Park'
 WHERE name = 'Mr. Hobo';
+
+# 価格のUPDATE
+UPDATE drink_info
+SET cost = cost + 1
+WHERE drink_name = 'Blue Moon'
+OR drink_name = 'Oh My Gosh'
+OR drink_name = 'Lime Fizz';
